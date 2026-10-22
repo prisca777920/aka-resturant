@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Welcome to Ryo Restaurant. Enjoy delicious meals, fresh ingredients, and a memorable dining experience.">
+
+  <title>Ryo Restaurant | Good Food, Great Vibes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a href="#home" class="logo" aria-label="Ryo Resturant Home">
+
+        Ryo
+
+        <small>RESTAURANT</small>
+
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="#home" class="active">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#menu">Menu</a></li>
+
+        <li><a href="#reviews">Reviews</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+      <div class="nav-actions">
+
+        <button class="cart-button" id="cartToggle" aria-label="Open shopping cart">
+
+          🛒 <span class="cart-count" id="cartCount">1</span>
+
+        </button>
+
+        <a href="#reservation" class="btn btn-primary">Book a Table</a>
+
+        <button class="menu-toggle" id="menuToggle"
+
+          aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">Good food / Great vibes / Always</span>
+
+          <h1>Welcome to <span>Ryo</span> Restaurant</h1>
+
+          <p>
+
+            Fresh ingredients, rich flavours, and a cosy atmosphere.
+
+            At Ryo Restaurant, we serve more than just food —
+
+            we serve memorable experiences.
+
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#menu" class="btn btn-primary">Explore Our Menu →</a>
+
+            <a href="#reservation" class="btn btn-outline">Book a Table ↗</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="features" aria-label="Why choose Ryo">
+
+      <div class="container feature-grid">
+
+        <div class="feature">
+
+          <div class="feature-icon">♨</div>
+
+          <h3>Fresh Ingredients</h3>
+
+          <p>Freshly selected ingredients for every meal.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">♨</div>
+
+          <h3>Delicious Menu</h3>
+
+          <p>A variety of dishes to satisfy every taste.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">♧</div>
+
+          <h3>Cosy Atmosphere</h3>
+
+          <p>Relax and enjoy a warm, welcoming environment.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">♧</div>
+
+          <h3>Great Service</h3>
+
+          <p>We make every visit special.</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section menu-section" id="menu">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">Our Menu</span>
+
+          <h2>Popular Dishes</h2>
+
+          <p>Discover delicious meals prepared with love.</p>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+        <div class="filter-buttons" aria-label="Filter menu">
+
+          <button class="filter-btn active" data-filter="all">All Dishes</button>
+
+          <button class="filter-btn" data-filter="local">Local Dishes</button>
+
+          <button class="filter-btn" data-filter="continental">Continental</button>
+
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+          <article class="food-card" data-category="continental"
+
+            data-name="Grilled Chicken" data-price="6500">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80"
+
+                alt="Grilled chicken served with vegetables" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Grilled Chicken</h3>
+
+              <p>Juicy grilled chicken served with fresh sides.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦6,500</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="continental"
+
+            data-name="Creamy Pasta" data-price="5500">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+
+                alt="Creamy pasta with herbs" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Creamy Pasta</h3>
+
+              <p>Rich pasta with a creamy sauce and herbs.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦5,500</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="local"
+
+            data-name="Beef Stew" data-price="7000">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+
+                alt="A rich, hearty stew" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Beef Stew</h3>
+
+              <p>Tender beef cooked in a rich, flavourful sauce.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦7,000</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="local"
+
+            data-name="Jollof Rice" data-price="4500">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80"
+
+                alt="A delicious rice dish" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Jollof Rice</h3>
+
+              <p>Our take on a West African favourite, full of flavour.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦4,500</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="local"
+
+            data-name="Egusi Soup & Swallow" data-price="6000">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+
+                alt="A hearty soup dish" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Egusi Soup & Swallow</h3>
+
+              <p>A comforting Nigerian meal with rich traditional flavours.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦6,000</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="continental"
+
+            data-name="Classic Burger" data-price="5000">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+
+                alt="Classic burger with fresh toppings" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Classic Burger</h3>
+
+              <p>A juicy burger with fresh vegetables and a tasty sauce.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦5,000</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="drinks"
+
+            data-name="Fresh Fruit Juice" data-price="2000">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=700&q=80"
+
+                alt="Fresh fruit juice" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Fresh Fruit Juice</h3>
+
+              <p>A refreshing fruit drink to complement your meal.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦2,000</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="food-card" data-category="drinks"
+
+            data-name="Iced Coffee" data-price="2500">
+
+            <div class="food-image">
+
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+
+                alt="A glass of iced coffee" loading="lazy">
+
+            </div>
+
+            <div class="food-info">
+
+              <h3>Iced Coffee</h3>
+
+              <p>Smooth, chilled coffee for a refreshing break.</p>
+
+              <div class="food-bottom">
+
+                <span class="price">₦2,500</span>
+
+                <button class="order-btn add-to-cart">Add to Cart +</button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section about-section" id="about">
+
+      <div class="container about-grid">
+
+        <img class="about-image"
+
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+
+          alt="Warm restaurant dining area" loading="lazy">
+
+        <div class="about-text">
+
+          <span class="eyebrow">About Us</span>
+
+          <h2>The Story of Ryo</h2>
+
+          <p>
+
+            At Ryo Restaurant, we believe that great food brings people
+
+            together. Our goal is to create a welcoming space where every
+
+            meal becomes a memorable experience.
+
+          </p>
+
+          <p>
+
+            From local favourites to continental classics, we focus on
+
+            flavour, quality, and hospitality in every dish we serve.
+
+          </p>
+
+          <ul class="about-points">
+
+            <li>Quality ingredients</li>
+
+            <li>Meals prepared with care</li>
+
+            <li>A welcoming dining experience</li>
+
+          </ul>
+
+          <a href="#reservation" class="btn btn-primary">Visit Ryo →</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">Testimonials</span>
+
+          <h2>What Our Customers Say</h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+        <!-- Replace these sample testimonials with real customer reviews. -->
+
+        <div class="review-grid">
+
+          <article class="review-card">
+
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+
+            <p>"The food is amazing! The atmosphere is cosy, and the staff
+
+              are super friendly. Definitely coming back!"</p>
+
+            <div class="reviewer">— Sarah A.</div>
+
+          </article>
+
+          <article class="review-card">
+
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+
+            <p>"Ryo Restaurant delivers a lovely dining experience.
+
+              Great food, friendly service, and a beautiful setting."</p>
+
+            <div class="reviewer">— Daniel K.</div>
+
+          </article>
+
+          <article class="review-card">
+
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+
+            <p>"One of the best dining experiences I've had in a long time.
+
+              Highly recommended!"</p>
+
+            <div class="reviewer">— Blessing E.</div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section reservation-section" id="reservation">
+
+      <div class="container reservation-wrapper">
+
+        <span class="eyebrow">Reservations</span>
+
+        <h2>Book Your Table</h2>
+
+        <p>
+
+          Planning a special evening or a meal with friends?
+
+          Send us your preferred date and time.
+
+        </p>
+
+        <form class="reservation-form" id="reservationForm">
+
+          <div class="form-group">
+
+            <label for="guestName">Full Name</label>
+
+            <input type="text" id="guestName" name="name"
+
+              placeholder="Your full name" autocomplete="name" required>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="guestEmail">Email Address</label>
+
+            <input type="email" id="guestEmail" name="email"
+
+              placeholder="you@example.com" autocomplete="email" required>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="bookingDate">Reservation Date</label>
+
+            <input type="date" id="bookingDate" name="date" required>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="bookingTime">Preferred Time</label>
+
+            <input type="time" id="bookingTime" name="time" required>
+
+          </div>
+
+          <div class="form-group full">
+
+            <label for="guestCount">Number of Guests</label>
+
+            <select id="guestCount" name="guests" required>
+
+              <option value="1">1 Guest</option>
+
+              <option value="2" selected>2 Guests</option>
+
+              <option value="3">3 Guests</option>
+
+              <option value="4">4 Guests</option>
+
+              <option value="5">5 Guests</option>
+
+              <option value="6">6 Guests</option>
+
+              <option value="7+">7 or more Guests</option>
+
+            </select>
+
+          </div>
+
+          <div class="form-group full">
+
+            <label for="bookingNotes">Special Requests (Optional)</label>
+
+            <textarea id="bookingNotes" name="notes" rows="3"
+
+              placeholder="Any special requests?"></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+
+            Send Reservation Request →
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <section class="section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">Get In Touch</span>
+
+          <h2>Visit Ryo Restaurant</h2>
+
+          <p>We look forward to welcoming you.</p>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+        <!-- Replace these sample details with your real business information. -->
+
+        <div class="contact-grid">
+
+          <div class="contact-item">
+
+            <div class="feature-icon">⌖</div>
+
+            <h3>Our Location</h3>
+
+            <p>123 Food Street, Lagos, Nigeria</p>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="feature-icon">☎</div>
+
+            <h3>Call Us</h3>
+
+            <p>+234 8065938348</p>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="feature-icon">✉</div>
+
+            <h3>Email Us</h3>
+
+            <p>hello@ryorestaurant.com</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <aside class="cart-panel" id="cartPanel" hidden
+
+      aria-label="Shopping cart">
+
+      <div class="cart-header">
+
+        <h2>Your Order</h2>
+
+        <button id="cartClose" aria-label="Close cart">×</button>
+
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total">
+
+        <span>Total</span>
+
+        <span id="cartTotal">₦0</span>
+
+      </div>
+
+      <button class="btn btn-primary" id="checkoutBtn">
+
+        Order via WhatsApp →
+
+      </button>
+
+      <p style="color:var(--muted);font-size:.78rem;margin-top:12px">
+
+        Your order will be prepared as a WhatsApp message for confirmation.
+
+      </p>
+
+    </aside>
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <a href="#home" class="logo">Ryo<small>RESTAURANT</small></a>
+
+          <p style="margin-top:18px">
+
+            Good food, great vibes, and memorable moments.
+
+            We can't wait to serve you.
+
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About Us</a></li>
+
+            <li><a href="#menu">Our Menu</a></li>
+
+            <li><a href="#reviews">Reviews</a></li>
+
+            <li><a href="#reservation">Reservations</a></li>
+
+          </ul>
+
+        </div>
+
+        <div>
+
+          <h3>Contact Us</h3>
+
+          <p>123 Food Street, Lagos, Nigeria</p>
+
+          <p>+234 8065938348</p>
+
+          <p>hello@ryorestaurant.com</p>
+
+        </div>
+
+        <div>
+
+          <h3>Follow Us</h3>
+
+          <p>Stay connected for new dishes and special offers.</p>
+
+          <div class="social-links">
+
+            <a href="https://instagram.com/" target="_blank"
+
+              rel="noopener noreferrer">Instagram</a>
+
+            <a href="https://facebook.com/" target="_blank"
+
+              rel="noopener noreferrer">Facebook</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+
+        © <span id="year"></span> Ryo Restaurant. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
